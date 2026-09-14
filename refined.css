@@ -1,0 +1,29 @@
+/* Senior-designer portfolio direction: quiet editorial surfaces and one restrained accent. */
+:root{--ink:#181817;--blue:#0b5c63;--soft:#f5f5f2;--line:#d8d8d4;--gray:#efefed;--teal:#0b5c63}
+body{background:#fff}.resume-top aside{background:#f0f0ee}.photo{border-radius:3px}.badge{border-radius:2px;background:var(--teal)}.resume-detail{background:#fff}.job>h2,.job time,.job p{color:#535351}.job p strong{color:var(--teal)}
+.chapters{background:#fff;padding-top:120px;padding-bottom:120px}.chapters header{max-width:1040px;margin-bottom:65px}.chapters header h2{font-size:clamp(38px,4.3vw,62px)}.chapter-grid{max-width:1040px;display:block}.chapter{width:100%;min-height:0;border:0;border-radius:0;border-top:1px solid var(--line);padding:29px 0;background:transparent;display:grid;grid-template-columns:72px minmax(0,1fr) auto;gap:22px;align-items:center}.chapter:last-child{border-bottom:1px solid var(--line)}.chapter:hover{transform:none;box-shadow:none;color:var(--teal)}.chapter>span{font-size:12px}.chapter>p{display:none}.chapter h3{font-size:clamp(23px,2.5vw,34px);line-height:1.1}.chapter>b{font-size:13px;margin:0;white-space:nowrap}.chapter i{color:currentColor}.contact{background:#f5f5f2;padding:115px 25px}.contact em{color:var(--teal)}.modal{background:#15151580}.modal-box{border-radius:4px;box-shadow:0 20px 65px #00000022}.modal .eyebrow{color:var(--teal)}.modal section{border-color:var(--line)}
+@media(max-width:800px){.chapters{padding:78px 25px}.chapter{grid-template-columns:40px 1fr;gap:15px}.chapter>b{grid-column:2;justify-self:start;margin-top:6px}.chapter h3{font-size:25px}.contact{padding:84px 20px}}
+#contact{display:none!important}
+.other-track{display:block!important;overflow:hidden!important}.other-track>.other-rail{display:flex;gap:14px;width:max-content;padding:0 max(9vw,28px) 18px;animation:projects-marquee-left 60s linear infinite!important}.other-track:hover .other-rail,.other-track:focus-within .other-rail{animation-play-state:paused!important}@keyframes projects-marquee-left{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}@media(max-width:760px){.other-track>.other-rail{animation-duration:44s!important;padding-inline:25px}}
+
+/* Shared visual system: one accent, square content surfaces, restrained utility rounding. */
+:root{--ink:#181817;--teal:#0b5c63;--blue:#0b5c63;--soft:#f5f5f2;--gray:#efefed;--line:#d8d8d4;--radius-utility:4px}
+body{color:var(--ink);background:#fff}
+.photo,.badge,.modal-box,.copy-notice{border-radius:var(--radius-utility)}
+.cover-focus span,.timeline-legend span{border-radius:var(--radius-utility)}
+.pcase,.other-card,.case-art{border-radius:0}
+.pcase.teal,.teal{background:#0b5c63}.pcase.dark,.dark{background:#181817}.pcase.light,.light{background:#efefed}
+.other-projects{background:#f5f5f2}.other-card{border-color:#d8d8d4}.other-card:hover{border-color:#0b5c63}
+.project-timeline{background:#111c1c;color:#f5f5f2}.project-timeline:before{background:rgba(11,92,99,.18)}.timeline-head .eyebrow{color:#a6c5c2}.timeline-head p:last-child{color:#bac6c4}.year-column,.year-column:last-child{border-color:rgba(166,197,194,.45)}.year-column:before{background:#0b5c63}.year-column h3{color:#73aaa6}.year-column li{color:#edf1f0}.timeline-legend span{border-color:rgba(166,197,194,.45);color:#c5d2d0}
+.case-label,.record-label,.other-projects-head p,.other-card small,.other-card b,.cover a,.cover-kicker{color:#0b5c63}
+
+/* Component rules: colour can vary by content, while shape and borders stay consistent. */
+:root{--surface-radius:12px;--utility-radius:6px;--pill-radius:999px;--surface-line:#d8d8d4}
+.photo{border-radius:var(--surface-radius)}
+.resume-top .photo{background-image:url('portrait.png')}
+.pcase,.other-card,.case-art{border-radius:var(--surface-radius);border:1px solid var(--surface-line);overflow:hidden}
+.pcase.teal,.teal{background:#0b5c63;border-color:#0b5c63}.pcase.dark,.dark{background:#1c1c1a;border-color:#1c1c1a}.pcase.light,.light{background:#f3f5f4;border-color:#d6dcda}
+.other-card{background:#fff;border-color:var(--surface-line)}
+.other-card:hover{border-color:#0b5c63}
+.badge,.modal-box,.copy-notice{border-radius:var(--utility-radius)}
+.cover-focus span,.timeline-legend span{border-radius:var(--pill-radius)}
