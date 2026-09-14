@@ -1,0 +1,9 @@
+@media (prefers-reduced-motion:no-preference){
+  .motion-enabled .motion-in{opacity:0;transform:translate3d(0,18px,0);transition:opacity .82s cubic-bezier(.16,1,.3,1) var(--motion-delay,0ms),transform .82s cubic-bezier(.16,1,.3,1) var(--motion-delay,0ms);will-change:opacity,transform}
+  .motion-enabled .motion-in.motion-visible{opacity:1;transform:translate3d(0,0,0)}
+  .motion-enabled .photo.motion-in{transform:translate3d(0,16px,0) scale(.985)}
+  .motion-enabled .photo.motion-in.motion-visible{transform:translate3d(0,0,0) scale(1)}
+  .motion-enabled .pcase.motion-in{transition:opacity .7s cubic-bezier(.16,1,.3,1) var(--motion-delay,0ms),transform .7s cubic-bezier(.16,1,.3,1) var(--motion-delay,0ms)}
+  .motion-enabled .pcase.motion-in:hover{transform:translate3d(0,-4px,0)}
+}
+@media (prefers-reduced-motion:reduce){.motion-enabled *{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
